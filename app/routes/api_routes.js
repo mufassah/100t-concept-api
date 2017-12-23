@@ -7,7 +7,7 @@ module.exports = function(app) {
 			consumer_secret: 'BscbPybQIEhgUC9GFFWe0nHpgRxHD11TUk7qcLNDhfA4TtfWzz',
 			bearer_token: 'AAAAAAAAAAAAAAAAAAAAAJWu3gAAAAAARxdW5nqaAH7xwXI3nXjno1y0eTY%3Dnf8IqWsiegiw465OPQcwNfkQDzZUuYptLawh2jm8AHcGECzpFA'
 		})
-		client.get('statuses/user_timeline', {screen_name: '100thieves', count: 1}, $
+		client.get('statuses/user_timeline', {screen_name: '100thieves', count: 1}, function(error, tweets, response){
 			if(!error) {
 				console.log(tweets)
 				res.send(tweets)
@@ -15,6 +15,7 @@ module.exports = function(app) {
 			else {
 				console.log(error)
 			}
+
 		})
 	})
 }
