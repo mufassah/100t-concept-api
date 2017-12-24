@@ -2,6 +2,10 @@ var axios = require('axios')
 var Twitter = require('twitter')
 module.exports = function(app) {
 	app.get('/twitter', (req,res) => {
+		res.setHeader('Access-Control-Allow-Origin', '*');
+	    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+	    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,contenttype'); // If needed
+	    res.setHeader('Access-Control-Allow-Credentials', true);
 		var client = new Twitter({
 			consumer_key: 'uyR81RFWn2zVjf1mKyg5AhQGC',
 			consumer_secret: 'BscbPybQIEhgUC9GFFWe0nHpgRxHD11TUk7qcLNDhfA4TtfWzz',
