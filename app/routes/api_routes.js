@@ -16,13 +16,14 @@ module.exports = function(app) {
       .then((tweets) => {
         let twitterObj = {}
 
-        console.log(tweets[0].entities.media)
+        console.log(tweets[0])
 
         twitterObj.created = tweets[0].created_at
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
+
         hundredTweets.push(twitterObj)
         
       })
