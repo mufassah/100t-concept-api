@@ -39,7 +39,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
@@ -55,7 +55,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
@@ -71,7 +71,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
@@ -87,7 +87,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
@@ -103,7 +103,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
@@ -119,7 +119,7 @@ module.exports = function(app) {
         twitterObj.msg = tweets[0].text
         twitterObj.avi = tweets[0].user.profile_image_url_https
         twitterObj.name = tweets[0].user.name
-        twitterObj.id = tweets[0].id
+        twitterObj.id = tweets[0].id_str
         hundredTweets.push(twitterObj)
         
       })
