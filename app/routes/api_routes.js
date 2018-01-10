@@ -95,7 +95,7 @@ module.exports = function(app) {
         console.log(error)
       })
 
-      await client.get('statuses/user_timeline', {screen_name: 'c9_meteos', count: 1})
+      await client.get('statuses/user_timeline', {screen_name: 'MeteosLoL', count: 1})
       .then((tweets) => {
         let twitterObj = {}
 
